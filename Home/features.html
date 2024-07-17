@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Features - Student Collaboration Platform</title>
+  <style>
+    body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #007bff;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+h1 {
+  margin: 0;
+}
+
+#features-container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+.feature {
+  margin-bottom: 20px;
+}
+
+.feature h2 {
+  color: #007bff;
+}
+
+.feature p {
+  margin-top: 5px;
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Features</h1>
+  </header>
+
+  <main id="features-container">
+    <!-- Features content will be dynamically added here -->
+  </main>
+
+  <script >
+    document.addEventListener('DOMContentLoaded', function () {
+  const featuresContainer = document.getElementById('features-container');
+
+  // Example features content for Student Collaboration Platform
+  const features = [
+    {
+      title: 'Discussion Forums',
+      description: 'Engage in academic discussions with fellow students and instructors.'
+    },
+    {
+      title: 'Project Collaboration',
+      description: 'Work on group projects collaboratively with built-in tools.'
+    },
+    {
+      title: 'Query Resolution System',
+      description: 'Get help from instructors and alumni by posting queries and seeking assistance.'
+    },
+    {
+      title: 'Resource Sharing',
+      description: 'Exchange study materials, resources, and notes with other students.'
+    }
+  ];
+
+  // Render features content
+  features.forEach(feature => {
+    const featureDiv = document.createElement('div');
+    featureDiv.classList.add('feature');
+    featureDiv.innerHTML = `
+      <h2>${feature.title}</h2>
+      <p>${feature.description}</p>
+    `;
+    featuresContainer.appendChild(featureDiv);
+  });
+});
+
+  </script>
+</body>
+</html>

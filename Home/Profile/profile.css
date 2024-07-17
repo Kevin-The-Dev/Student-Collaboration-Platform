@@ -1,0 +1,195 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* Navigation Bar styles */
+.navbar {
+    background-color: #007bff;
+    color: #fff;
+    padding: 7px 0;
+    top: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .container h1{
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  .nav-links li a:hover {
+    text-decoration: underline;
+  }
+  .nav-links {
+    list-style-type: none;
+    
+  }
+  
+  .nav-links li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  .nav-links li a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+
+  
+.attendance-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.attendance-table th, .attendance-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.attendance-table th {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.attendance-table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.attendance-table tbody tr:hover {
+    background-color: #ddd;
+}
+
+.results {
+    margin-bottom: 30px;
+}
+
+.all-semester-results,
+.mid-exam-results-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.all-semester-results th,
+.all-semester-results td,
+.mid-exam-results-table th,
+.mid-exam-results-table td {
+    border: 1px solid #007bff;
+    padding: 8px;
+    text-align: left;
+}
+
+.all-semester-results th,
+.mid-exam-results-table th {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.all-semester-results tbody tr:nth-child(even),
+.mid-exam-results-table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+
+main {
+    padding: 2rem;
+}
+
+.personal-info,
+.attendance,
+.results {
+    margin-bottom: 2rem;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.personal-info h2,
+.attendance h2,
+.results h2 {
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.profile-picture {
+    float: left;
+    margin-right: 2rem;
+}
+
+.profile-picture img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.details {
+    overflow: hidden;
+}
+
+.details p {
+    float: left;
+    width: 50%;
+    margin-bottom: 0.5rem;
+}
+
+.details p:nth-child(even) {
+    clear: left;
+}
+
+th,
+td {
+    text-align: left;
+    padding: 0.5rem;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #333;
+    color: #fff;
+    padding: 0.5rem;
+}
+
+h3 {
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
+footer {
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notifications</title>
+    <link rel="stylesheet" href="notification.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <ul class="nav-links">
+                    <li><a href="../home.html">Home</a></li> <!-- Home Button -->
+                </ul>
+                <h1 class="header-text">Notification</h1> <!-- Header Text -->
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="notification-list">
+            <h2>All Notifications</h2>
+            <div class="filter-options">
+                <label for="sort-by">Sort By:</label>
+                <select id="sort-by">
+                    <option value="date">Date</option>
+                    <option value="category">Category</option>
+                </select>
+                <label for="filter-by">Filter By:</label>
+                <select id="filter-by">
+                    <option value="all">All</option>
+                    <option value="exams">Exams</option>
+                    <option value="submissions">Submissions</option>
+                    <option value="hackathons">Hackathons</option>
+                    <option value="webinars">Webinars</option>
+                    <option value="seminars">Seminars</option>
+                    <option value="cultural">Cultural Activities</option>
+                    <option value="tech-fest">Tech Fest Activities</option>
+                </select>
+                <button id="refresh-btn">Refresh</button>
+            </div>
+            <ul id="notification-items">
+                <!-- Notification items will be dynamically added here -->
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>Copyright &copy; 2024. All rights reserved.</p>
+    </footer>
+
+    <script src="notification.js"></script>
+</body>
+
+</html>

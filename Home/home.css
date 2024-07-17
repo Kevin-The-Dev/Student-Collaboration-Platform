@@ -1,0 +1,128 @@
+/* Reset styles */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+/* Navigation Bar styles */
+.navbar {
+  background-color: #007bff;
+  color: #fff;
+  padding: 15px 0;
+  top: 0;
+  width: 100%;
+  position: fixed;
+  z-index: 1000;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  width: 50px;
+}
+.nav-links li a:hover {
+  text-decoration: underline;
+}
+.nav-links {
+  list-style-type: none;
+  
+}
+
+.nav-links li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.nav-links li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Background Photo styles */
+.background-photo-container {
+  background-image: url('CKPCET\ photo.jpg');
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  min-height: 100vh;
+  
+  position: relative;
+  filter: blur(4px);
+}
+
+
+/* for footer */
+footer {
+  background-color: #007bff;
+  padding: 20px;
+  color: #fff;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: stretch;
+}
+.footer-divider {
+  height: 140px; /* Adjust height as needed */
+  width: 1px;
+  background-color: #fff; /* Set color of the line */
+  margin: 0 20px; 
+}
+
+.footer-left {
+  flex: 1;
+}
+
+.footer-left {
+  flex: 2;
+  padding: 80px;
+  text-align: justify;
+}
+
+
+.footer-right ul {
+  list-style-type: none;
+  padding: 44px;
+}
+
+.footer-right ul li {
+  margin-bottom: 10px;
+  font-size: medium;
+}
+
+.footer-right ul li a {
+  text-decoration: none;
+  color: #ffffff;
+
+}
+
+.footer-right ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer-line {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.footer-line p {
+
+  margin: 0;
+}

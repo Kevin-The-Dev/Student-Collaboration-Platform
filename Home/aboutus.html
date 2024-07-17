@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - Student Collaboration Platform</title>
+<style>
+    body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #007bff;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+h1 {
+  margin: 0;
+}
+
+#about-container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+#about-content {
+  margin-top: 20px;
+}
+
+</style>
+</head>
+<body>
+  <header>
+    <h1>About Us</h1>
+  </header>
+
+  <main id="about-container">
+    <!-- About content will be dynamically added here -->
+  </main>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+  const aboutContainer = document.getElementById('about-container');
+
+  // Example about content for Student Collaboration Platform
+  const aboutContent = `
+    <h2>Welcome to the Student Collaboration Platform</h2>
+    <p>The Student Collaboration Platform is a web-based platform designed to facilitate collaboration and communication among students, instructors, and alumni.</p>
+    <p>Our platform provides various features including:</p>
+    <ul>
+      <li>Discussion forums for engaging in academic discussions</li>
+      <li>Project collaboration tools for working on group projects</li>
+      <li>Query resolution system for seeking help from instructors and alumni</li>
+      <li>Resource sharing to exchange study materials and resources</li>
+    </ul>
+    <p>Our mission is to create a supportive online community where students can learn, collaborate, and grow together.</p>
+    <p>Feel free to explore our platform and join our vibrant community!</p>
+  `;
+
+  // Render about content
+  aboutContainer.innerHTML = aboutContent;
+});
+
+  </script>
+</body>
+</html>

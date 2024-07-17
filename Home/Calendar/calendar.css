@@ -1,0 +1,159 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Navigation Bar styles */
+.navbar {
+    background-color: #007bff;
+    color: #fff;
+    padding: 7px 0;
+    top: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container h1 {
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.nav-links li a:hover {
+    text-decoration: underline;
+}
+
+.nav-links {
+    list-style-type: none;
+
+}
+
+.nav-links li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-btn {
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.nav-btn:hover {
+    background-color: #777;
+}
+
+.nav-buttons {
+    margin: 30px 177px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.prev{
+    z-index: 3;
+    align-self: self-start;
+    margin: 10px 20px 10px 30px;
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+}
+.next{
+    z-index: 3;
+    align-self: self-start;
+    margin: 10px 20px 10px 1100px;
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+}
+
+/* Calendar Styles */
+.calendar-container {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: -94px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.calendar-header {
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 20px;
+}
+
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    border-top: 1px solid #ccc;
+}
+
+.day {
+    padding: 10px;
+    text-align: center;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    position: relative;
+}
+
+.other-month {
+    color: #999;
+}
+
+.event {
+    background-color: #ffd700;
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    bottom: 3px;
+    right: 3px;
+    display: inline-block;
+}
+
+.event:hover {
+    transform: scale(1.2);
+}
+
+.absent {
+    background-color: #ff6666;
+}
+
+.present {
+    background-color: #99ff99;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+
+
+
+}

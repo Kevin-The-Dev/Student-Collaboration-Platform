@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Collaboration Platform - Services</title>
+  <style>
+    body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #007bff;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+h1 {
+  margin: 0;
+}
+
+#services-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.service {
+  width: 300px;
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.service h2 {
+  margin-top: 0;
+}
+
+.service p {
+  margin: 10px 0;
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Services Offered</h1>
+  </header>
+
+  <main id="services-container">
+    <!-- Services will be dynamically added here -->
+  </main>
+
+  <script >
+    document.addEventListener('DOMContentLoaded', function () {
+  const servicesContainer = document.getElementById('services-container');
+
+  // Example services data for Student Collaboration Platform
+  const servicesData = [
+    { title: 'Discussion Forum', description: 'Engage in discussions with fellow students and instructors.' },
+    { title: 'Project Collaboration', description: 'Work on projects collaboratively with your peers.' },
+    { title: 'Query Resolution', description: 'Get your queries resolved by instructors and alumni.' },
+    { title: 'Resource Sharing', description: 'Share useful study materials and resources.' }
+    // Add more services as needed
+  ];
+
+  // Render services
+  servicesData.forEach(service => {
+    const serviceElem = createServiceElement(service.title, service.description);
+    servicesContainer.appendChild(serviceElem);
+  });
+});
+
+// Function to create a service element
+function createServiceElement(title, description) {
+  const serviceElem = document.createElement('div');
+  serviceElem.classList.add('service');
+
+  const titleElem = document.createElement('h2');
+  titleElem.textContent = title;
+
+  const descriptionElem = document.createElement('p');
+  descriptionElem.textContent = description;
+
+  serviceElem.appendChild(titleElem);
+  serviceElem.appendChild(descriptionElem);
+
+  return serviceElem;
+}
+
+  </script>
+</body>
+</html>
